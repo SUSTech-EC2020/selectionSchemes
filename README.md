@@ -11,8 +11,36 @@ based on elitism (always copy 10% best ) + (μ,λ) selection ( λ = 2μ )
 ![gvv2](./figures/g_vs_v_2.png)
 ![gvv](./figures/g_vs_v.png)
 
+### Ouyang Yicheng
+
+POPULATION_SIZE = 30
+
+MAX_EVALUATION = 500000
+
+DIMENSION = 30
+
+MUTATE_RATE = 0.1
+
+ALPHA = 0.4
+
+LAMBDA = int(POPULATION_SIZE * 0.4)
+
+
+
+SimpleArithmetic+Gaussian+RouletteWheel+ReplaceAll:
+
+![](./figures/SimpleArithmetic+Gaussian+RouletteWheel+ReplaceAll.png)
+
+SimpleArithmetic+Gaussian+RouletteWheel+ReplaceWorst:
+
+![](./figures/SimpleArithmetic+Gaussian+RouletteWheel+ReplaceWorst.png)
+
+SimpleArithmetic+Gaussian+RankBased+ReplaceWorst:
+
+![](./figures/SimpleArithmetic+Gaussian+RankBased+ReplaceWorst.png)
 
 ### Chao Pan
+
 Single arithmetic + Nonuniform using Cauchy   
 MIN = -1.28       
 MAX = 1.28      
