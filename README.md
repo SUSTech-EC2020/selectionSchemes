@@ -62,8 +62,8 @@ MUTATION_RATE = 0.5
 Recombination operator: arithmetic\
 Mutation operator: uniform\
 ALPHA = 0.4\
-CROSSOVER_RATE = 0.1
-MUTATION_RATE = 0.1\
+CROSSOVER_RATE = 0.1\
+MUTATION_RATE = 0.1
 
 Record the best so far\
 ![img](./figures/tanhao.png)
