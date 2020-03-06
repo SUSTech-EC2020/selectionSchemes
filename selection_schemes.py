@@ -13,7 +13,7 @@ def roulette_wheel_selection( fitness_list ):
   return prob_list
 
 def rank_based_selection (fitness_list):
-  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k])
+  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=True)
   prob_list = []
   sum_rank = sum(ascending_rank) + len(ascending_rank)  
   for rank in ascending_rank:
@@ -23,7 +23,7 @@ def rank_based_selection (fitness_list):
   return prob_list
 
 def linear_ranking_selection (fitness_list, alpha=0):
-  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k])
+  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=True)
   beta = 2 - alpha
   mu = len(fitness_list)
   offset = alpha/mu
@@ -36,7 +36,7 @@ def linear_ranking_selection (fitness_list, alpha=0):
   return prob_list
 
 def exponential_ranking_selection (fitness_list):
-  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k])
+  ascending_rank = sorted(range(len(fitness_list)), key=lambda k: fitness_list[k], reverse=True)
   mu = len(fitness_list)
   C = mu - ( math.exp(1) - math.exp(1-mu) ) / ( math.exp(1) -1 )
   prob_list = []
