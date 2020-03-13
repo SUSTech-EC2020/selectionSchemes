@@ -25,19 +25,7 @@ ALPHA = 0.4
 
 LAMBDA = int(POPULATION_SIZE * 0.4)
 
-
-
-SimpleArithmetic+Gaussian+RouletteWheel+ReplaceAll:
-
-![](./figures/SimpleArithmetic+Gaussian+RouletteWheel+ReplaceAll.png)
-
-SimpleArithmetic+Gaussian+RouletteWheel+ReplaceWorst:
-
-![](./figures/SimpleArithmetic+Gaussian+RouletteWheel+ReplaceWorst.png)
-
-SimpleArithmetic+Gaussian+RankBased+ReplaceWorst:
-
-![](./figures/SimpleArithmetic+Gaussian+RankBased+ReplaceWorst.png)
+![](./figures/oyyc.png)
 
 ### Chao Pan
 
